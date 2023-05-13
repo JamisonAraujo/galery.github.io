@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/profile.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body onclick="theFunction(event)">
+
+    <div class="profile">
+
+        <div class="profile-picture">
+            <img src="assets/profilePhoto.png" id="profile-pic">
+        </div>
+
+        <div class="name">Random Guy</div>
+
+        <div class="location">SomeCity, SomeCountry</div>
+
+
+    </div>
+
+    <div class="counters">
+
+        <button class="posts">
+
+            <p id="postsCount">6</p>
+            <p>Posts</p>
+
+        </button>
+
+        <button class="followers">
+            <p>2,242</p>
+            <p>Followers</p>
+        </button>
+
+        <button class="following">
+            <p>1,432</p>
+            <p>Following</p>
+        </button>
+
+    </div>
+
+    <div class="img-container">
+
+        <div class="row1">
+
+            <img src="assets/photo1.png" id="img1" class="imagem">
+            <img src="assets/photo2.png" id="img2" class="imagem">
+
+        </div>
+
+        <div class="row2">
+            <img src="assets/photo3.png" id="img3" class="imagem">
+            <img src="assets/photo4.png" id="img4" class="imagem">
+            
+        </div>
+
+        <div class="row3">
+            <img src="assets/photo5.png" id="img5" class="imagem">
+            <img src="assets/photo6.png" id="img6" class="imagem">
+        </div>
+
+        
+
+    </div>
+    <div id="MyModal" class="modal">
+        <div class="modalDiv">
+            <div>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="imgModal">
+            </div>
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+        </div>
+
+    </div>
+
+</body>
+
+<footer>created by <b>TheJamesAraujo</b> devChallenges.io</footer>
+<script src="script.js"></script>
+
+</html>
