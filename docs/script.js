@@ -1,6 +1,6 @@
 var clkObj;
+
 function theFunction(e){ 
-	// alert(e.target.className);
 	clkObj = e.target;
 
 	if (clkObj.className == "imagem"){
@@ -8,27 +8,27 @@ function theFunction(e){
 	}
 }
 
-// Get the modal
 var modal = document.getElementById("MyModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// seleciona e insere imagem no modal
 var modalImg = document.getElementById("imgModal");
+
+//caso haja alt na imagem, pode ser usada como descrição
 // var captionText = document.getElementById("caption");
+
 function imgSelect(){
-	// console.log(this.src)
 	modal.style.display = "block";
-	modalImg.src = clkObj.src
+	modalImg.src = clkObj.src;
 	//   captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
+// "x" para fechar o modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+// fechar modal ao clicar no "x"
 span.onclick = function() {
   modal.style.display = "none";
 }
-
 
 
 
